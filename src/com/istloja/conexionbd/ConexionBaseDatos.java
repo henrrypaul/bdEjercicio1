@@ -1,13 +1,20 @@
 
-package bdejercisio1;
+package com.istloja.conexionbd;
 
+import com.istloja.modelo.persona;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.Statement;
+import java.util.ArrayList;
 
 
 public class ConexionBaseDatos {
 
     
+    
+    
+   
+   
     public static void main(String[] args) {
         System.out.println("iniciando conexion con la base de datos");
         ConexionBaseDatos baseDatosMySql = new ConexionBaseDatos ();
@@ -47,5 +54,8 @@ public class ConexionBaseDatos {
           return null;      
         
     }
-    
+
+//    }
 }
+
+
