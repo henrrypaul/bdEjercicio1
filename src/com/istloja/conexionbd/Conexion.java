@@ -8,7 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 
-public class ConexionBaseDatos {
+public class Conexion {
 
     
     
@@ -17,7 +17,7 @@ public class ConexionBaseDatos {
    
     public static void main(String[] args) {
         System.out.println("iniciando conexion con la base de datos");
-        ConexionBaseDatos baseDatosMySql = new ConexionBaseDatos ();
+        Conexion baseDatosMySql = new Conexion ();
        baseDatosMySql.conexionMysql();
       
         
@@ -56,6 +56,10 @@ public class ConexionBaseDatos {
     }
 
 //    }
+
+    public Connection conectarBaseDatos() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
 
 

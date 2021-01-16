@@ -1,28 +1,36 @@
 
 package com.istloja.modelo;
 
-public class persona {
-        private int idPersona;
+public class persona{
+     private int idPersona;
     private String cedula;
-    private String nombres;
+    private String nombre;
     private String apellidos;
     private String direccion;
     private String correo;
-    private int telefono;
+    private String telefono;
 
-    public persona(int idPersona, String cedula, String nombres, String apellidos, String direccion, String correo, int telefono) {
+    public persona(int idPersona, String cedula, String nombre, String apellidos, String direccion, String correo, String telefono) {
         this.idPersona = idPersona;
         this.cedula = cedula;
-        this.nombres = nombres;
+        this.nombre = nombre;
         this.apellidos = apellidos;
         this.direccion = direccion;
         this.correo = correo;
         this.telefono = telefono;
     }
+    
+    
 
     public persona() {
-
     }
+
+    public persona(int idpersona) {
+        this.idPersona = idPersona;
+    }
+
+    
+    
 
     public int getIdPersona() {
         return idPersona;
@@ -40,12 +48,12 @@ public class persona {
         this.cedula = cedula;
     }
 
-    public String getNombres() {
-        return nombres;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getApellidos() {
@@ -72,12 +80,20 @@ public class persona {
         this.correo = correo;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
+    @Override
+    public String toString() {
+        return "Persona{" + "idPersona=" + idPersona + ", cedula=" + cedula + ", nombre=" + nombre + ", apellidos=" + apellidos + ", direccion=" + direccion + ", correo=" + correo + ", telefono=" + telefono + '}';
+    }
+    
+    
+    
+    
 }
